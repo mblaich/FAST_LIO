@@ -1,6 +1,6 @@
 common:
     lid_topic:  "/velodyne_points"
-    imu_topic:  "/imu/data"
+    imu_topic:  "/xsens_mtig_700/imu/data" #"/imu/data"
     time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
     
 preprocess:
@@ -30,5 +30,5 @@ publish:
 
 pcd_save:
     pcd_save_en: true
-    interval: -1                 # how many LiDAR frames saved in each pcd file; 
+    interval: 5000                 # how many LiDAR frames saved in each pcd file; 
                                  # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
