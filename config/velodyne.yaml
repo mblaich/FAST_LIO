@@ -17,13 +17,8 @@ mapping:
     b_gyr_cov: 0.0001
     fov_degree:    180
     det_range:     100.0
-<<<<<<< HEAD
     extrinsic_est_en:  true      # true: enable the online estimation of IMU-LiDAR extrinsic,
-    extrinsic_T: [ 0.205, 0.16, -0.4697]
-=======
-    extrinsic_est_en:  false      # true: enable the online estimation of IMU-LiDAR extrinsic,
     extrinsic_T: [ 0, 0, 0.28]
->>>>>>> ecd86b748368f897de02f0fa8f1cf9e96c5ddb44
     extrinsic_R: [ 1, 0, 0, 
                    0, 1, 0, 
                    0, 0, 1]
@@ -37,8 +32,3 @@ publish:
 pcd_save:
     pcd_save_en: true
     interval: -1                 # how many LiDAR frames saved in each pcd file; 
-<<<<<<< HEAD
-                                 # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
-=======
-                                 # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
->>>>>>> ecd86b748368f897de02f0fa8f1cf9e96c5ddb44
