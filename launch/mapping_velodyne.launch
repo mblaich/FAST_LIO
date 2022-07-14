@@ -3,7 +3,7 @@
 
     <arg name="rviz" default="true" />
     <arg name="imu_topic" default="/imu/data" />
-    <arg name="lid_topic" default="/velodyne_points_test" />
+    <arg name="lid_topic" default="/velodyne_points" />
 
 
     <rosparam command="load" file="$(find fast_lio)/config/velodyne.yaml" />
