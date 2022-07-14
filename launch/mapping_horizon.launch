@@ -2,6 +2,8 @@
 <!-- Launch file for Livox Horizon LiDAR -->
 
 	<arg name="rviz" default="true" />
+	<arg name="imu_topic" default="true" />
+	<arg name="lidar_topic" default="true" />
 
 	<rosparam command="load" file="$(find fast_lio)/config/horizon.yaml" />
 
