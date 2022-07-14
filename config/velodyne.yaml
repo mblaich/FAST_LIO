@@ -1,6 +1,6 @@
 common:
     lid_topic:  "/velodyne_points"
-    imu_topic:  "/imu/data"
+    imu_topic:  "/xsens_mtig_700/imu/data" #"/imu/data"
     time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
     
 preprocess:
