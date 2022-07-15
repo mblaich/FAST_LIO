@@ -2,8 +2,12 @@
 <!-- Launch file for Livox AVIA LiDAR -->
 
 	<arg name="rviz" default="true" />
+	<arg name="imu_topic" default="/imu/data" />
+        <arg name="lid_topic" default="/livox/lidar" />
 
 	<rosparam command="load" file="$(find fast_lio)/config/avia.yaml" />
+	<param name="/common/imu_topic" type="str" value="$(arg imu_topic)"/>
+    	<param name="/common/lid_topic" type="str" value="$(arg lid_topic)"/>
 
 	<param name="feature_extract_enable" type="bool" value="0"/>
 	<param name="point_filter_num" type="int" value="3"/>
